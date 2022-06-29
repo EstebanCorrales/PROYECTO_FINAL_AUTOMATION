@@ -46,7 +46,7 @@ describe('Cypress POM Cart Saucedemo', () => {
 
 
     it('Remove in the Cart', () => {
-        cart.clickAddCart1(),
+        cart.clickAddCart1();
         cart.accessCart();
         cart.clickbtnRemove();
         cart.elements.cartQuantity().should('have.length', 0)
