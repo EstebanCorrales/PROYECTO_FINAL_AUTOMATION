@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open --browser chrome --e2e"
+    "test": "cypress open",
+    "cypress:runDefault" : "npx cypress run --browser chrome --spec cypress/e2e/Test-QA-Automation/*.cy.js", 
+    "cypress:runChrome" : "npx cypress run --browser chrome --spec cypress/e2e/Test-QA-Automation/*.cy.js"
   },
   "keywords": [
     "cypress",
